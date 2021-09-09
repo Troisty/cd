@@ -29,7 +29,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/quentindethy/mywebserver:latest
+          image-ref: 'docker.io/quentindethy/cd:latest
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
