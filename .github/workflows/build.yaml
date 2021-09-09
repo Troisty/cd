@@ -17,4 +17,5 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
             registry: docker.io
             repository: quentindethy/cd
-            tag_with_sha: true
+           #tag_with_sha: true
+            tags: ${{ github.sha }}
